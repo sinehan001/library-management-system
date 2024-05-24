@@ -1,0 +1,42 @@
+{
+  "name": "tms",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test:user": "jest tests/user.test.js",
+    "test:task": "jest tests/task.test.js",
+    "test": "npm run test:user && npm run test:task"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sinehan001/task-management-system.git"
+  },
+  "keywords": [
+    "task",
+    "management",
+    "system"
+  ],
+  "author": "sinehan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sinehan001/task-management-system/issues"
+  },
+  "homepage": "https://github.com/sinehan001/task-management-system#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.4.0",
+    "node-cron": "^3.0.3",
+    "nodemailer": "^6.9.13",
+    "nodemon": "^3.1.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0"
+  }
+}
